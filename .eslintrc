@@ -8,6 +8,8 @@
   "plugins": ["prettier"],
   "extends": ["react-app", "airbnb", "prettier/react"],
   "rules": {
+    "no-trailing-spaces": 0,
+    "no-underscore-dangle": 0,
     "no-console": "off",
     "semi": "off",
     "import/no-extraneous-dependencies": [
@@ -31,9 +33,31 @@
       }
     ],
     "indent": [2, 2, { "SwitchCase": 1 }],
+    "default-case": [0, { "commentPattern": "skip default case" }],
     "react/prop-types": 0,
     "react/jsx-indent-props": [2, 2],
     "react/jsx-indent": [2, 2],
+    "react/prefer-stateless-function": "off",
+    "react/self-closing-comp": 0,
+    "react/jsx-max-props-per-line": ["error", { "maximum": 2 }],
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "arrow-parens": ["off", "always"],
+    "arrow-body-style": ["off", "as-needed"],
+    "import/prefer-default-export": 0,
+    "import/extensions": 0,
+    "function-paren-newline": ["error", "consistent"],
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "no-case-declarations": 0,
+    "no-multi-spaces": [
+      1,
+      {
+        "exceptions": {
+          "VariableDeclarator": true,
+          "FunctionExpression": true
+        }
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
@@ -44,7 +68,8 @@
         "bracketSpacing": true,
         "jsxBracketSameLine": false,
         "tabWidth": 2,
-        "useTabs": false
+        "useTabs": false,
+        "arrowParens": "avoid"
       }
     ]
   }
