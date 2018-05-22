@@ -1,0 +1,15 @@
+# config and script
+/config
+/scripts
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# vs code
+/.vscode

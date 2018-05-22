@@ -1,0 +1,9 @@
+{
+  "extends": 'stylelint-config-standard',
+  "defaultSeverity": "warning",
+  "rules": {
+    "rule-empty-line-before": null,
+    "block-closing-brace-newline-before": null,
+    "block-no-empty": null
+  }
+}
